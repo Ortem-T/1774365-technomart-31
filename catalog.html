@@ -10,8 +10,9 @@
          <img src="img/index-logo.png" width="220" height="47" alt="Логотип Техномарт">
        </a>
        <form action="blank.html" method="get">
-         <input type="search" name="search" placeholder="Искать здесь..." >
-         <button type="submit">Поиск</button>
+        <button type="submit">Поиск</button>
+        <label for="site-search">Поиск:</label>
+        <input type="search" name="search" placeholder="Искать здесь..." id="site-search" >
        </form>
        <div>
          <ul>
@@ -61,11 +62,11 @@
             <h2>Фильтры товаров</h2>
             <form action="https://echo.htmlacademy.ru/courses" method="get"></form>
             <fieldset>
-                <label>Цена</label>
+                <legend>Цена</legend>
                 <input type="range" name="price" min="0" max="30000" step="100">
             </fieldset>
             <fieldset>
-                <label>Производители</label>
+                <legend>Производители</legend>
                 <ul>
                     <li>
                         <input type="checkbox" name="bosch" id="filter-boch" checked>
@@ -90,7 +91,7 @@
                 </ul>
             </fieldset>
             <fieldset>
-                <label>Питание</label>
+                <legend>Питание</legend>
                 <ul>
                     <li>
                         <input type="radio" name="power" value="battery" id="filter-battery" checked>

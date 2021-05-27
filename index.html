@@ -3,16 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body>
    <header>
       <a>
-        <img src="img/index-logo.png" width="220" height="47" alt="Логотип Техномарт">
+        <img src="img/logo.png" width="220" height="47" alt="Логотип магазина Техномар">
       </a>
       <form action="blank.html" method="get">
         <button type="submit">Поиск</button>
         <label for="site-search">Поиск:</label>
-        <input type="search" name="search" placeholder="Искать здесь..." id="site-search" >
+        <input type="search" name="search" placeholder="Искать..." id="site-search" >
       </form>
       <div>
         <ul>
@@ -71,8 +75,9 @@
      <section>
        <h2>Фотогалерея</h2>
        <figure>
-         <a href="catalog.html">Открыть каталог</a>
-         <img src="img/hammer-drill.jpg" width="620" height="266" alt="Перфоратор">
+         <a href="catalog.html">Открыть каталог</a><br>
+         <img src="img/hammer-drill.jpg" width="620" height="266" alt="Изображение работы с перфоратором"><br>
+         <img src="img/drill.jpg" width="620" height="266" alt="Изображение работы с дрелью">
        </figure>
      </section>
      <section>
@@ -83,7 +88,7 @@
             <a href="blank.html">
                 <h3>Перфоратор BOSCH BFG 9000</h3>
                 <p>
-                    <img src="img/BOSCHBFG9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
+                    <img src="img/BOSCH-BFG-9000.jpg" width="184" height="164" alt="Синий перфоратор фирмы BOSCH BFG 9000">
                 </p>
             </a>
                 <p>
@@ -95,7 +100,7 @@
           <a href="blank.html">
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <p>
-                  <img src="img/BOSCHBFG3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+                  <img src="img/BOSCH-BFG-3000.jpg" width="127" height="112" alt="Синий перфоратор фирмы BOSCH BFG 3000">
               </p>
           </a>
               <p>
@@ -108,7 +113,7 @@
         <a href="blank.html">
             <h3>Перфоратор BOSCH BFG 6000</h3>
             <p>
-                <img src="img/BOSCHBFG6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                <img src="img/BOSCH-BFG-6000.jpg" width="144" height="128" alt="Синий перфоратор фирмы BOSCH BFG 6000">
             </p>
         </a>
             <p>
@@ -120,7 +125,7 @@
       <a href="blank.html">
           <h3>Перфоратор BOSCH BFG 2000</h3>
           <p>
-              <img src="img/BOSCHBFG2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+              <img src="img/BOSCH-BFG-2000.jpg" width="127" height="112" alt="Синий перфоратор фирмы BOSCH BFG 2000">
           </p>
       </a>
           <p>
@@ -135,14 +140,30 @@
       <h2>Популярные производители:</h2>
        <a href="blank.html">Популярные производители</a> 
       <ul>
-        <li><a href="#">Bosch</a></li>
-        <li><a href="#">Makita</a></li>
-        <li><a href="#">Dewalt</a></li>
-        <li><a href="#">Интерскол</a></li>
-        <li><a href="#">Hitachi</a></li>
-        <li><a href="#">LG</a></li>
-        <li><a href="#">AEG</a></li>
-        <li><a href="#">Metabo</a></li>
+        <li><a href="#">
+          <img src="img/bosch.png" width="126" height="37" alt="Логотип фирмы BOSCH"> 
+        </a></li>
+        <li><a href="#">
+          <img src="img/Makita.png" width="123" height="40" alt="Логотип фирмы Makita">
+        </a></li>
+        <li><a href="#">
+          <img src="img/DeWALT.png" width="146" height="44" alt="Логотип фирмы Dewalt">
+        </a></li>
+        <li><a href="#">
+          <img src="img/interskol.png" width="200" height="76" alt="Логотип фирмы Интерскол">
+        </a></li>
+        <li><a href="#">
+          <img src="img/Hitachi.png" width="169" height="31" alt="Логотип фирмы Hitachi">
+        </a></li>
+        <li><a href="#">
+          <img src="img/LG.png" width="121" height="73" alt="Логотип фирмы LG">
+        </a></li>
+        <li><a href="#">
+          <img src="img/AEG.png" width="151" height="96" alt="Логотип фирмы AEG">
+        </a></li>
+        <li><a href="#">
+          <img src="img/Metabo.png" width="204" height="69" alt="Логотип фирмы Metabo">
+        </a></li>
       </ul>
      </section>
      <section>
@@ -152,8 +173,10 @@
             <form>
               <ul>
                   <li>
-                      <input type="radio" name="service" value="delivery" id="filter-delivery">
-                      <label for="filter-delivery">Доставка</label>
+                      <input type="radio" name="service" value="delivery" id="filter-delivery" checked>
+                      <label for="filter-delivery">Доставка
+                        <img src="img/delivery.png" width="468" height="261" alt="Машина доставки">
+                      </label>
                   </li>
                   <li>
                       <input type="radio" name="service" value="warranty" id="filter-warranty">
@@ -184,13 +207,14 @@
       <h2>Контакты</h2> 
       <p>Вы можете забрать товар сами, 
         заехав в наш офис:</p>
-      <a href="#">Заблудились? Напишите НАМ!</a> 
+        <img src="img/map.jpg" width="300" height="158" alt="Карта местонахождения магазина">
+      <a href="mailto:mail@htmlacademy.ru">Заблудились? Напишите НАМ!</a> 
      </section>
    </main>
 
    <footer>
     <a>
-      <img src="img/index-logo.png" width="220" height="47" alt="Логотип Техномарт">
+      <img src="img/logo-footer.png" width="220" height="68" alt="Логотип Техномарт">
     </a>
     <nav>
       <ul>

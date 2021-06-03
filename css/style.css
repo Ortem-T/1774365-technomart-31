@@ -1,0 +1,354 @@
+/* Variables */
+
+:root {
+  --basic-white: #FFFFFF;
+  --basic-gray: #F1F5F7;
+  --basic-dark-gray: #32425C;
+  --basic-red: #EE3643;
+  --basic-beige: #F9F5F0;
+  --basic-yellow: #FFD180;
+  --basic-green: #63A63E;
+  --basic-black: #000000;
+
+  --special-yellow: #FFBF47;
+  --special-blue: #3BBCE3;
+  --special-purple: #DC91D8;
+  --special-green: #8ED78F;
+
+  --footer-grey: #293449;
+}
+
+/* Global */
+
+.page-body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-dark-gray);
+  text-transform: none;
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-white);
+  background-color: var(--basic-gray);
+}
+
+.user-navigation a,
+.main-navigation a,
+.main-menu a {
+  color: var(--basic-white);
+}
+
+/* User navigation */
+
+.user-navigation {
+  background-color: var(--basic-dark-gray);
+}
+
+.user-list{
+  list-style: none;
+}
+
+.order{
+  background-color: var(--basic-green);
+}
+
+.main-title{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  color: var(--basic-red);
+}
+
+.main-contact{
+  list-style: none;
+}
+
+.contacts-phone{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  border: 3px solid #FFFFFF;
+  color: var(--basic-red);
+}
+
+.main-adres{
+  font-size: 16px;
+  color: var(--basic-dark-gray)
+}
+
+.main-login{
+  list-style: none;
+}
+
+.login-link{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.registration-link{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+/* Site Navigation */
+
+.main-navigation{
+  background-color: var(--basic-dark-gray);
+}
+
+.site-navigation{
+  list-style: none;
+}
+
+.menu-list{
+  list-style: none;
+}
+
+.item-material {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--special-yellow);
+}
+
+.item-tool{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--special-blue);
+}
+
+.item-technic {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--special-purple);
+}
+
+.item-stock {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--special-green);
+}
+
+.item-delivery {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--special-yellow);
+}
+
+.button-menu {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.3);
+  mix-blend-mode: normal;
+  padding: 10px 24px;
+}
+
+.button-red {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  padding: 10px 46px;
+}
+
+.main-section {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--basic-dark-gray);
+  background-color: var(--basic-beige);
+}
+
+.main-section h2{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.popular-products a{
+  color: var(--basic-black);
+}
+
+.popular-products-list {
+  list-style: none;
+}
+
+.service{
+  background-color: var(--basic-gray);
+}
+
+.service h2,
+.about-us h2,
+.contacts h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.service-list label{
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--basic-dark-gray);
+}
+
+.service-list {
+  list-style: none;
+}
+
+.about-us-list a {
+  color: var(--basic-black);
+}
+
+.about-us-list {
+  list-style: none;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+}
+
+/* Main footer */
+
+.main-footer {
+  color: var(--basic-white);
+  background-color: var(--basic-dark-gray);
+  background-position: 0 0;
+}
+
+.footer-nav-1 a {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+.footer-nav-2 a {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-yellow);
+}
+
+.footer-nav-list {
+  list-style: none;
+}
+
+.footer-contact {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+.footer-background{
+  background-color: var(--footer-grey);
+}
+
+.footer-info {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+.social-button {
+  color: inherit;
+}
+
+.footer-mail,
+.footer-copyright {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+.footer-mail a,
+.footer-copyright a {
+  color: var(--basic-yellow);
+}
+

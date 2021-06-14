@@ -54,8 +54,8 @@
      </ul>
     </nav>
    </header>
-   <main class="container center">
-     <section class="main-menu">
+   <main class="container">
+     <section class="main-menu center">
        <h2>Каталог товаров и услуг</h2>
        <div class="menu-container">
          <div class="item-material">
@@ -90,12 +90,12 @@
       </div>
     </div>
      </section>
-       <div class="main-section">
+       <div class="main-section center">
        <h2>Популярные товары:</h2>
-       <a class="button-red" href="blank.html">Все популярные товары</a>
+       <a class="button-red button-red-popular" href="blank.html">Все популярные товары</a>
        </div>
-     <section class="popular-products">
-       <ul class="catalog-list">
+     <section class="popular-products center">
+       <ul class="catalog-list-popular">
         <li class="catalog-item">
             <a href="blank.html">
                 <p class="catalog-item-image">
@@ -140,11 +140,11 @@
   </li>
       </ul>
      </section>
-      <div class="main-section">
+      <div class="main-section center">
       <h2>Популярные производители:</h2>
-       <a class="button-red" href="blank.html">Все производители</a>
+       <a class="button-red button-red-popular" href="blank.html">Все производители</a>
       </div>
-     <section class="popular-brands">
+     <section class="popular-brands center">
       <ul class="popular-brands-list">
         <li><a href="#">
           <img src="img/bosch.png" width="126" height="37" alt="Логотип фирмы BOSCH">
@@ -173,6 +173,7 @@
       </ul>
      </section>
      <section class="service">
+      <div class="service-wrapper center">
        <h2>Сервисы</h2>
        <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
@@ -191,15 +192,18 @@
                       <label for="filter-credit">Кредит</label>
                   </li>
               </ul>
-              <img src="img/delivery.png" width="468" height="261" alt="Машина доставки">
-              <p>Доставка</p>
+              <div class="delivery-info">
+              <p class="delivery-title">Доставка</p>
               <p>Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно!
                 Ведь мы неплохо заработаем,
                 поднимая его на ваш этаж!</p>
+              <img src="img/delivery.png" width="468" height="261" alt="Машина доставки">
+            </div>
             </form>
+            </div>
      </section>
-     <div class="info">
+     <div class="info center">
      <section class="about-us">
       <h2>Компания "Техномарт"</h2>
       <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
@@ -216,27 +220,22 @@
      </section>
      <section class="contacts">
       <h2>Контакты</h2>
-      <p>Вы можете забрать товар сами,
+      <p>Вы можете забрать товар сами,<br>
         заехав в наш офис:</p>
-        <img src="img/map.jpg" width="300" height="158" alt="Карта местонахождения магазина">
-      <a class="button-red" href="mailto:mail@htmlacademy.ru">Заблудились? Напишите НАМ!</a>
+      <img src="img/map.jpg" width="300" height="158" alt="Карта местонахождения магазина">
+      <a class="button-red button-red-map" href="mailto:mail@htmlacademy.ru">Заблудились? Напишите НАМ!</a>
      </section>
     </div>
    </main>
 
    <footer class="main-footer">
-    <div class="footer-nav">
+    <div class="footer-nav center">
+    <nav class="footer-nav-1">
     <a class="footer-logo">
       <img src="img/logo-footer.png" width="220" height="68" alt="Логотип Техномарт">
     </a>
-    <section class="footer-contact">
-      <h2>Контакты</h2>
-      <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
-         +7 800 555-86-28</p>
-     </section>
-    <nav class="footer-nav-1">
-      <ul class="footer-nav-list">
-        <li class="footer-nav-item"><a href="index.html">Главная</a></li>
+      <ul class="footer-nav-list-1">
+        <li class="footer-nav-item"><a href="index.html">Компания</a></li>
         <li class="footer-nav-item"><a href="blank.html">Новости</a></li>
         <li class="footer-nav-item"><a href="catalog.html">Каталог</a></li>
         <li class="footer-nav-item"><a href="blank.html">Доставка</a></li>
@@ -244,7 +243,12 @@
       </ul>
     </nav>
     <nav class="footer-nav-2">
-      <ul class="footer-nav-list">
+    <section class="footer-contact">
+      <!--<h2>Контакты</h2>-->
+      <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
+         +7 800 555-86-28</p>
+     </section>
+      <ul class="footer-nav-list-2">
         <li class="footer-nav-item"><a href="blank.html">Материалы</a></li>
         <li class="footer-nav-item"><a href="blank.html">Техномарт</a></li>
         <li class="footer-nav-item"><a href="blank.html">Инструменты</a></li>
@@ -253,10 +257,10 @@
      </nav>
      </div>
     <div class="footer-background">
-    <div class="footer-container">
+    <div class="footer-container center">
     <section class="footer-info">
-      <h2>Правовая информация</h2>
-      <p>© 2010–2021 Компания «Техномарт» Все права защищены</p>
+      <!--<h2>Правовая информация</h2>-->
+      <p>© 2010–2021 Компания «Техномарт»<br> Все права защищены</p>
      </section>
      <section class="footer-social">
       <h2>Давай дружить</h2>

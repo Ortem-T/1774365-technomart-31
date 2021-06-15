@@ -54,8 +54,10 @@
      </ul>
     </nav>
    </header>
-    <main class="page-catalog container">
-        <ul class="breadcrumbs center">
+
+    <main class="page-catalog">
+        <div class="breadcrumbs-tille center">
+        <ul class="breadcrumbs">
             <li>
                 <a href="index.html">Главная</a>
             </li>
@@ -69,8 +71,11 @@
                 Перфораторы
             </li>
         </ul>
-        <h1 class="page-title center">Перфораторы</h1>
-        <section class="filters center">
+        <h1 class="page-title">Перфораторы</h1>
+        </div>
+        <div class="filters-catalog center">
+
+        <section class="filters">
             <h2 class="filters-title">Фильтр:</h2>
             <form class="filter" action="https://echo.htmlacademy.ru/courses" method="get"></form>
             <fieldset>
@@ -117,7 +122,9 @@
             </fieldset>
             <button class="filter-button" type="submit">Показать</button>
         </section>
-        <section class="sortings center">
+    
+        <div class="sortings-catalog">
+        <section class="sortings">
             <h2 class="sorting-title">Сортировка:</h2>
             <form class="sorting">
                     <ul class="sorting-list">
@@ -136,7 +143,7 @@
                     </ul>
             </form>
         </section>
-        <section class="catalog center">
+        <section class="catalog">
             <h2>Перфораторы</h2>
             <ul class="catalog-list">
                 <li class="catalog-item">
@@ -237,6 +244,10 @@
                         <p class="new">NEW</p>
                 </li>
             </ul>
+        </section>
+        </div>
+        </div>
+        <section class="pagination center">
             <ul class="pagination-list">
                 <li class="pagination-item">
                     <a>1</a>
@@ -262,17 +273,12 @@
 
     <footer class="main-footer">
         <div class="footer-nav center">
+        <nav class="footer-nav-1">
         <a class="footer-logo">
           <img src="img/logo-footer.png" width="220" height="68" alt="Логотип Техномарт">
         </a>
-        <section class="footer-contact">
-          <h2>Контакты</h2>
-          <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
-             +7 800 555-86-28</p>
-         </section>
-        <nav class="footer-nav-1">
-          <ul class="footer-nav-list">
-            <li class="footer-nav-item"><a href="index.html">Главная</a></li>
+          <ul class="footer-nav-list-1">
+            <li class="footer-nav-item"><a href="index.html">Компания</a></li>
             <li class="footer-nav-item"><a href="blank.html">Новости</a></li>
             <li class="footer-nav-item"><a href="catalog.html">Каталог</a></li>
             <li class="footer-nav-item"><a href="blank.html">Доставка</a></li>
@@ -280,7 +286,12 @@
           </ul>
         </nav>
         <nav class="footer-nav-2">
-          <ul class="footer-nav-list">
+        <section class="footer-contact">
+          <!--<h2>Контакты</h2>-->
+          <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
+             +7 800 555-86-28</p>
+         </section>
+          <ul class="footer-nav-list-2">
             <li class="footer-nav-item"><a href="blank.html">Материалы</a></li>
             <li class="footer-nav-item"><a href="blank.html">Техномарт</a></li>
             <li class="footer-nav-item"><a href="blank.html">Инструменты</a></li>
@@ -291,8 +302,8 @@
         <div class="footer-background">
         <div class="footer-container center">
         <section class="footer-info">
-          <h2>Правовая информация</h2>
-          <p>© 2010–2021 Компания «Техномарт» Все права защищены</p>
+          <!--<h2>Правовая информация</h2>-->
+          <p>© 2010–2021 Компания «Техномарт»<br> Все права защищены</p>
          </section>
          <section class="footer-social">
           <h2>Давай дружить</h2>

@@ -12,6 +12,7 @@
   --basic-greylight: #C5C5C5;
   --basic-greenlight: #5FBB2D;
   --basic-dark-green: #518534;
+  --basic-border-gray: #EAEAEA;
 
   --catalog-beige:#F7F3EC;
   --catalog-grey-price:#A9A9A9;
@@ -84,7 +85,7 @@ img {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-  margin-bottom: 37.5px;
+  margin-bottom: 37px;
 }
 
 .search-form {
@@ -131,6 +132,7 @@ img {
   margin: 0;
   padding: 0;
   padding-left: 30px;
+  flex: 1 1 auto;
 }
 
 .main-contact{
@@ -138,7 +140,7 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-
+  flex: 1 1 auto;
 }
 
 .contacts-phone{
@@ -148,6 +150,7 @@ img {
   font-weight: 700;
   border: 3px solid #FFFFFF;
   color: var(--basic-red);
+  
 }
 
 .contact-center {
@@ -157,6 +160,7 @@ img {
 .main-address{
   font-size: 16px;
   color: var(--basic-dark-gray);
+  text-align: center;
 }
 
 .main-login{
@@ -164,7 +168,8 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  justify-self: end;
+  
+  flex: 1 1 auto;
 }
 
 .login-link{
@@ -303,7 +308,23 @@ img {
   padding: 0;
 }
 
+.gallery-content p {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-white);
+}
+
+.gallery-title {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700; 
+}
+
 .button-menu {
+  display: inline-block;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -312,10 +333,12 @@ img {
   text-transform: uppercase;
   background-color: var(--button-opacity);
   mix-blend-mode: normal;
-  padding: 10px 24px;
+  width: 135px;
+  height: 18px;
+  padding: 10px;
   margin-bottom: 22px;
   margin-left: 22px;
-
+  text-align: center;
 }
 
 .button-red {
@@ -409,11 +432,17 @@ img {
   margin: 0;
   padding: 0;
   margin-bottom: 70px;
+  
 }
 
 .popular-brands-list li{
-  align-self: center;
   text-align: center;
+  border: 1px solid var(--basic-border-gray);
+  width: 220px;
+  height: 145px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
@@ -667,11 +696,23 @@ img {
   color: var(--basic-black);
 }
 
+.breadcrumbs-tille {
+  display: flex;
+  flex-direction: column;
+}
+
 .breadcrumbs {
+  display: flex;
+  margin-top: 21px;
+  margin-bottom: 20px;
   list-style: none;
   line-height: 18px;
   text-transform: uppercase;
 }
+
+/*.page-catalog h1 {
+  padding: 0;
+}*/
 
 .page-title {
   font-family: "Cuprum", Arial, sans-serif;
@@ -681,18 +722,58 @@ img {
   text-transform: uppercase;
   color: var(--basic-dark-gray);
   background-color: var(--basic-gray);
+  height: 60px;
+  padding-left: 29px;
+  padding-top: 29px;
 }
 
-.filter-list,
-.sorting-list {
+.filters-catalog {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.filters {
+  flex: 1 0 220px;
+  margin-right: 20px;
+}
+
+.filters fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filter-list {
   list-style: none;
 }
 
-.filters-title,
-.sorting-title {
+.sorting {
+  padding-top: 10px;
+  padding-bottom: 10px; 
+}
+
+.sorting-list {
+  display: flex;
+  list-style: none;
+}
+
+.filters-title {
+  margin: 0;
   line-height: 18px;
   text-transform: uppercase;
   background-color: var(--catalog-beige);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+}
+.sorting-title {
+  margin: 0;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--catalog-beige);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
 }
 
 .filter-title {
@@ -715,7 +796,14 @@ img {
 }
 
 .sortings {
+  display: flex;
+  justify-content: space-between;
   background-color: var(--catalog-beige);
+}
+
+.sorting-list {
+  margin: 0;
+  padding: 0;
 }
 
 .sorting-option {
@@ -748,10 +836,12 @@ img {
 }
 
 .catalog-item {
-  width: 220px;
+  flex: 1 1 auto;
+  width: 218px;
   min-height: 318px;
   margin-right: 20px;
   margin-bottom: 20px;
+  border: 1px solid var(--basic-border-gray);
 }
 
 .catalog-item:nth-child(3n) {
@@ -837,6 +927,16 @@ img {
   opacity: 0.5;
 }
 
+.pagination {
+  display: flex;
+  margin-bottom: 59px;
+}
+
+.pagination-list {
+  display: flex;
+  margin-left: 240px;
+}
+
 .pagination-item {
   line-height: 18px;
   text-transform: uppercase;
@@ -846,12 +946,19 @@ img {
   background-color: var(--basic-gray);
 }
 
+
 .product-info-title {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: 400;
   text-transform: uppercase;
+  padding-top: 64px;
+  padding-bottom: 25px;
+}
+
+.product-info-text {
+  padding-bottom: 68px; 
 }
 
 /* Grid */

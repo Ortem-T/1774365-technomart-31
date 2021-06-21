@@ -20,13 +20,12 @@
         <img src="img/logo.png" width="220" height="47" alt="Логотип магазина Техномарт">
       </a>
       <form class="search-form" action="blank.html" method="get">
-        <button class="search-button" type="submit">Поиск</button>
         <label for="site-search">Поиск:</label>
         <input type="search" name="search" placeholder="Искать..." id="site-search" >
       </form>
         <ul class="user-list">
-          <li><a class="bookmarks" href="blank.html">Закладки</a></li>
-          <li><a class="cart" href="blank.html">Корзина</a></li>
+          <li><a class="bookmarks" href="blank.html">Закладки:</a></li>
+          <li><a class="cart" href="blank.html">Корзина:</a></li>
           <li><a class="order" href="blank.html">Оформить заказ</a></li>
         </ul>
       </div>
@@ -56,11 +55,12 @@
    </header>
    <main class="container">
      <section class="main-menu center">
-       <h2>Каталог товаров и услуг</h2>
+       <h2 class="visually-hidden">Каталог товаров и услуг</h2>
        <div class="menu-container">
          <div class="item-material">
            <h3>Материалы</h3>
            <a class="button-menu" href="blank.html">На любой вкус</a>
+           <a class="new" href="blank.html"><img src="img/new.svg" width="70" height="70" alt="Новинка"></a>
          </div>
          <div class="item-tool">
           <h3>Инструмент</h3>
@@ -79,15 +79,17 @@
           <a class="button-menu" href="blank.html">Бесплатно</a>
         </div>
       <div class="gallery-container">
-       <!--<h2>Фотогалерея</h2>-->
+       <h2 class="visually-hidden">Фотогалерея</h2>
        <figure class="gallery-content">
          <img src="img/hammer-drill.jpg" width="620" height="266" alt="Изображение работы с перфоратором"><br>
          <!--<img src="img/drill.jpg" width="620" height="266" alt="Изображение работы с дрелью">-->
          <h2 class="gallery-title">Перфораторы</h2>
          <p>Настоящие мужские игрушки</p>
          <a class="button-red" href="catalog.html">Открыть каталог</a><br>
-         <button class="button gallery-button gallery-button-back" type="button" disabled>Назад</button>
-         <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
+         <button class="button gallery-button gallery-button-back" type="button" disabled>
+           <span class="visually-hidden">Назад</span></button>
+         <button class="button gallery-button gallery-button-next" type="button">
+          <span class="visually-hidden">Вперед</span></button>
        </figure>
       </div>
     </div>
@@ -117,7 +119,7 @@
           </a>
               <p class="catalog-item-old-price"><del>22500 Р.</del></p>
               <p class="catalog-item-price">15500 Р.</p>
-              <p class="new">NEW</p>
+              <a class="new" href="blank.html"><img src="img/new.svg" width="70" height="70" alt="Новинка"></a>
       </li>
       <li class="catalog-item-popular">
         <a href="blank.html">
@@ -138,7 +140,7 @@
       </a>
           <p class="catalog-item-old-price"><del>22500 Р.</del></p>
           <p class="catalog-item-price">12500 Р.</p>
-          <p class="new">NEW</p>
+          <a class="new" href="blank.html"><img src="img/new.svg" width="70" height="70" alt="Новинка"></a>
   </li>
       </ul>
      </section>
@@ -182,25 +184,25 @@
             <form class="service-form">
               <ul class="service-list">
                   <li class="service-delivery">
-                      <input type="radio" name="service" value="delivery" id="filter-delivery" checked>
+                      <input class="visually-hidden filter-input-checkbox-service" type="radio" name="service" value="delivery" id="filter-delivery" checked>
                       <label for="filter-delivery">Доставка</label>
                   </li>
                   <li class="service-warranty">
-                      <input type="radio" name="service" value="warranty" id="filter-warranty">
+                      <input class="visually-hidden filter-input-checkbox-service" type="radio" name="service" value="warranty" id="filter-warranty">
                       <label for="filter-warranty">Гарантия</label>
                   </li>
                   <li class="service-credit">
-                      <input type="radio" name="service" value="credit" id="filter-credit">
+                      <input class="visually-hidden filter-input-checkbox-service" type="radio" name="service" value="credit" id="filter-credit">
                       <label for="filter-credit">Кредит</label>
                   </li>
               </ul>
               <div class="delivery-info">
               <p class="delivery-title">Доставка</p>
-              <p>Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем,
+              <p>Мы с удовольствием доставим ваш товар прямо<br>
+                к вашему подъезду совершенно бесплатно!<br>
+                Ведь мы неплохо заработаем,<br>
                 поднимая его на ваш этаж!</p>
-              <img src="img/delivery.png" width="468" height="261" alt="Машина доставки">
+              <!--<img src="img/delivery.png" width="468" height="261" alt="Машина доставки">-->
             </div>
             </form>
             </div>
@@ -246,7 +248,7 @@
     </nav>
     <nav class="footer-nav-2">
     <section class="footer-contact">
-      <!--<h2>Контакты</h2>-->
+      <h2 class="visually-hidden">Контакты</h2>
       <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
          +7 800 555-86-28</p>
      </section>
@@ -261,15 +263,24 @@
     <div class="footer-background">
     <div class="footer-container center">
     <section class="footer-info">
-      <!--<h2>Правовая информация</h2>-->
+      <h2 class="visually-hidden">Правовая информация</h2>
       <p>© 2010–2021 Компания «Техномарт»<br> Все права защищены</p>
      </section>
      <section class="footer-social">
-      <h2>Давай дружить</h2>
+      <h2 class="visually-hidden">Давай дружить</h2>
       <ul>
-        <li><a class="social-button" href="#">ВК</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
+        <li><a class="social-button" href="#">
+          <span class="visually-hidden">ВК</span>
+          <img src="img/icon-vk.svg" width="27" height="16" alt="Логотип Вконтакте">
+        </a></li>
+        <li><a class="social-button" href="#">
+          <span class="visually-hidden">Фейсбук</span>
+          <img src="img/icon-fb.svg" width="12" height="22" alt="Логотип Фейсбук">
+        </a></li>
+        <li><a class="social-button" href="#">
+          <span class="visually-hidden">Инстаграм</span>
+          <img src="img/icon-insta.svg" width="21" height="21" alt="Логотип Инстаграм">
+        </a></li>
       </ul>
      </section>
      <div>

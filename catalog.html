@@ -20,7 +20,6 @@
         <img src="img/logo.png" width="220" height="47" alt="Логотип магазина Техномарт">
       </a>
       <form class="search-form" action="blank.html" method="get">
-        <button class="search-button" type="submit">Поиск</button>
         <label for="site-search">Поиск:</label>
         <input type="search" name="search" placeholder="Искать..." id="site-search" >
       </form>
@@ -59,7 +58,7 @@
         <div class="breadcrumbs-tille center">
         <ul class="breadcrumbs">
             <li>
-                <a href="index.html">Главная</a>
+                <a href="index.html"><img src="img/icon-home.svg" width="14" height="12"></a>
             </li>
             <li>
                 <a href="#">Каталог</a>
@@ -78,44 +77,63 @@
         <section class="filters">
             <h2 class="filters-title">Фильтр:</h2>
             <form class="filter" action="https://echo.htmlacademy.ru/courses" method="get"></form>
-            <fieldset>
+            <fieldset class="filter-item">
                 <legend class="filter-title">Цена:</legend>
-                <input class="filter-input-range" type="range" name="price" min="0" max="30000" step="100">
+                <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle toggle-min" tabindex="0"></div>
+                      <div class="toggle toggle-max" tabindex="0"></div>
+                    </div>
+                    <div class="price-controls">
+                      <label class="min-price">
+                        <input type="number" name="min-price" value="0">
+                      </label>
+                      <svg width="30" height="18"> <line x1="10" y1="18" x2="20" y2="18" stroke="#000000" stroke-width="1" /></svg>
+                      <label class="max-price">
+                        <input type="number" name="max-price" value="30000">
+                      </label>
+                    </div>
+                  </div>
             </fieldset>
-            <fieldset>
+            <div class="filter-line-shadow"></div>
+            <fieldset class="filter-item">
                 <legend class="filter-title">Производители:</legend>
                 <ul class="filter-list">
                     <li class="filter-option filter-checkbox">
-                        <input class="filter-input-checkbox filter-input" type="checkbox" name="bosch" id="filter-boch" checked>
+                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="bosch" id="filter-boch" checked>
                         <label for="filter-boch">Bosch</label>
                     </li>
                     <li class="filter-option filter-checkbox">
-                        <input class="filter-input-checkbox filter-input" type="checkbox" name="interscol" id="filter-interscol">
+                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="interscol" id="filter-interscol">
                         <label for="filter-interscol">Интерскол</label>
                     </li>
                     <li class="filter-option filter-checkbox">
-                        <input class="filter-input-checkbox filter-input" type="checkbox" name="makita" id="filter-makita" checked>
+                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="makita" id="filter-makita" checked>
                         <label for="filter-makita">Makita</label>
                     </li>
                     <li class="filter-option filter-checkbox">
-                        <input class="filter-input-checkbox filter-input" type="checkbox" name="dewalt" id="filter-dewalt">
+                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="dewalt" id="filter-dewalt">
                         <label for="filter-dewalt">Dewalt</label>
                     </li>
                     <li class="filter-option filter-checkbox">
-                        <input class="filter-input-checkbox filter-input" type="checkbox" name="hitachi" id="filter-hitachi">
+                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hitachi" id="filter-hitachi">
                         <label for="filter-hitachi">Hitachi</label>
                     </li>
                 </ul>
             </fieldset>
-            <fieldset>
+            <div class="filter-line"></div>
+            <fieldset class="filter-item">
                 <legend class="filter-title">Питание:</legend>
                 <ul class="filter-list">
                     <li class="filter-option filter-radio">
-                        <input class="filter-input-radio filter-input" type="radio" name="power" value="battery" id="filter-battery" checked>
+                        <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power" value="battery" id="filter-battery" checked>
                         <label for="filter-battery">Аккумуляторные</label>
                     </li>
                     <li class="filter-option filter-radio">
-                        <input class="filter-input-radio filter-input" type="radio" name="power" value="network" id="filter-network">
+                        <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power" value="network" id="filter-network">
                         <label for="filter-network">Сетевые</label>
                     </li>
                 </ul>
@@ -129,22 +147,39 @@
             <form class="sorting">
                     <ul class="sorting-list">
                         <li class="sorting-option sorting-radio">
-                            <input class="sorting-input-radio sorting-input" type="radio" name="sorting" value="price" id="filter-price">
+                            <input class="visually-hidden sorting-input-radio sorting-input" type="radio" name="sorting" value="price" id="filter-price" checked>
                             <label for="filter-price">По цене</label>
                         </li>
                         <li class="sorting-option sorting-radio">
-                            <input class="sorting-input-radio sorting-input" type="radio" name="sorting" value="type" id="filter-type">
+                            <input class="visually-hidden sorting-input-radio sorting-input" type="radio" name="sorting" value="type" id="filter-type">
                             <label for="filter-type">По типу</label>
                         </li>
                         <li class="sorting-option sorting-radio">
-                            <input class="sorting-input-radio sorting-input" type="radio" name="sorting" value="functional" id="filter-functional">
+                            <input class="visually-hidden sorting-input-radio sorting-input" type="radio" name="sorting" value="functional" id="filter-functional">
                             <label for="filter-functional">По функционалу</label>
                         </li>
                     </ul>
             </form>
+            <form class="arrows">
+                <ul class="arrows-list">
+                    <li class="arrows-option arrows-radio">
+                        <input class="visually-hidden arrows-input-radio arrows-input" type="radio" name="arrows" value="up" id="filter-up" checked>
+                        <label for="filter-up">
+                            <svg width="11" height="10"> <polygon class="triangle" points="0,10 5.5,0 11,10" fill="#C5C5C5"/></svg>
+                        </label>
+                    </li>
+                    <li class="arrows-option arrows-radio">
+                        <input class="visually-hidden arrows-input-radio arrows-input" type="radio" name="arrows" value="down" id="filter-down">
+                        <label for="filter-down">
+                            <svg width="11" height="10"> <polygon class="triangle" points="0,0 5.5,10 11,0" fill="#C5C5C5"/></svg>
+                        </label>
+                    </li>
+                </ul>
+        </form>
         </section>
+
         <section class="catalog">
-            <h2>Перфораторы</h2>
+            <h2 class="visually-hidden">Перфораторы</h2>
             <ul class="catalog-list">
                 <li class="catalog-item">
                     <a href="blank.html">
@@ -168,18 +203,18 @@
                 </li>
                 <li class="catalog-item">
                     <a href="blank.html">
-                        <p class="catalog-item-image">
-                            <img src="img/BOSCH-BFG-6000.jpg" width="144" height="128" alt="Синий перфоратор фирмы BOSCH BFG 6000">
-                        </p>
-                        <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
-                    </a>
-                        <p class="catalog-item-old-price"><del>30500 Р.</del></p>
-                        <p class="catalog-item-price">25500 Р.</p>
-                        <p>
+                        <div class="catalog-item-botton">
                             <button class="button-cart" type="button">Купить</button>
                             <button class="button-bookmarks" type="button">В закладки</button>
-                        </p>
-                        <p class="new">NEW</p>
+                        </div>
+                        <!--<p class="catalog-item-image">
+                            <img src="img/BOSCH-BFG-6000.jpg" width="144" height="128" alt="Синий перфоратор фирмы BOSCH BFG 6000">
+                        </p>-->
+                        <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
+                    </a>
+                        <p class="catalog-item-old-price"><del>30500 Р.</del></p>
+                        <p class="catalog-item-price">25500 Р.</p>
+                        <a class="new" href="blank.html"><img src="img/new.svg" width="70" height="70" alt="Новинка"></a>
                 </li>
                 <li class="catalog-item">
                     <a href="blank.html">
@@ -190,7 +225,7 @@
                     </a>
                         <p class="catalog-item-old-price"><del>22500 Р.</del></p>
                         <p class="catalog-item-price">15500 Р.</p>
-                        <p class="new">NEW</p>
+                        <a class="new" href="blank.html"><img src="img/new.svg" width="70" height="70" alt="Новинка"></a>
                 </li>
                 <li class="catalog-item">
                     <a href="blank.html">
@@ -209,8 +244,9 @@
                         </p>
                         <h3 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h3>
                     </a>
+                        <p class="catalog-item-old-price old-price-none">15000 P.</p>
                         <p class="catalog-item-price">12500 Р.</p>
-                        <p class="new">NEW</p>
+                        <a class="new" href="blank.html"><img src="img/new.svg" width="70" height="70" alt="Новинка"></a>
                 </li>
                 <li class="catalog-item">
                     <a href="blank.html">
@@ -221,7 +257,7 @@
                     </a>
                         <p class="catalog-item-old-price"><del>22500 Р.</del></p>
                         <p class="catalog-item-price">15500 Р.</p>
-                        <p class="new">NEW</p>
+                        <a class="new" href="blank.html"><img src="img/new.svg" width="70" height="70" alt="Новинка"></a>
                 </li>
                 <li class="catalog-item">
                     <a href="blank.html">
@@ -240,8 +276,9 @@
                         </p>
                         <h3 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h3>
                     </a>
+                        <p class="catalog-item-old-price old-price-none">15000 P.</p>
                         <p class="catalog-item-price">12500 Р.</p>
-                        <p class="new">NEW</p>
+                        <a class="new" href="blank.html"><img src="img/new.svg" width="70" height="70" alt="Новинка"></a>
                 </li>
             </ul>
         </section>
@@ -249,7 +286,7 @@
         </div>
         <section class="pagination center">
             <ul class="pagination-list">
-                <li class="pagination-item">
+                <li class="pagination-item pagination-item-current">
                     <a>1</a>
                 </li>
                 <li class="pagination-item">
@@ -287,7 +324,7 @@
         </nav>
         <nav class="footer-nav-2">
         <section class="footer-contact">
-          <!--<h2>Контакты</h2>-->
+          <h2 class="visually-hidden">Контакты</h2>
           <p>г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
              +7 800 555-86-28</p>
          </section>
@@ -302,15 +339,24 @@
         <div class="footer-background">
         <div class="footer-container center">
         <section class="footer-info">
-          <!--<h2>Правовая информация</h2>-->
+          <h2 class="visually-hidden">Правовая информация</h2>
           <p>© 2010–2021 Компания «Техномарт»<br> Все права защищены</p>
          </section>
          <section class="footer-social">
-          <h2>Давай дружить</h2>
+          <h2 class="visually-hidden">Давай дружить</h2>
           <ul>
-            <li><a class="social-button" href="#">ВК</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
+            <li><a class="social-button" href="#">
+              <span class="visually-hidden">ВК</span>
+              <img src="img/icon-vk.svg" width="27" height="16" alt="Логотип Вконтакте">
+            </a></li>
+            <li><a class="social-button" href="#">
+              <span class="visually-hidden">Фейсбук</span>
+              <img src="img/icon-fb.svg" width="12" height="22" alt="Логотип Фейсбук">
+            </a></li>
+            <li><a class="social-button" href="#">
+              <span class="visually-hidden">Инстаграм</span>
+              <img src="img/icon-insta.svg" width="21" height="21" alt="Логотип Инстаграм">
+            </a></li>
           </ul>
          </section>
          <div>

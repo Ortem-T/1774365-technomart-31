@@ -20,8 +20,9 @@
         <img src="img/logo.png" width="220" height="47" alt="Логотип магазина Техномарт">
       </a>
       <form class="search-form" action="blank.html" method="get">
-        <label for="site-search">Поиск:</label>
-        <input type="search" name="search" placeholder="Искать..." id="site-search" >
+        <label class="visually-hidden" for="site-search">Поиск:</label>
+        <input type="search" name="search" placeholder="Поиск..." id="site-search">
+        <button class="botton-search" type="submit" aria-label="Закрыть"></button>
       </form>
         <ul class="user-list">
           <li><a class="bookmarks" href="blank.html">Закладки:</a></li>
@@ -43,7 +44,7 @@
     </div>
     <nav class="main-navigation">
      <ul class="site-navigation">
-       <li><a href="blank.html">Главная</a></li>
+       <li><a href="index.html">Главная</a></li>
        <li><a href="blank.html">Компания</a></li>
        <li><a href="catalog.html">Каталог</a></li>
        <li><a href="blank.html">Новости</a></li>
@@ -289,20 +290,48 @@
         </a></li>
       </ul>
      </section>
-     <div>
+     <div class="footer-end">
      <section class="footer-mail">
-       <p>Обратная связь:
+       <p>Обратная связь:</p>
          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-       </p>
      </section>
      <section class="footer-copyright">
-      <p>Разработано-
+      <p>Разработано-</p>
         <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
-      </p>
     </section>
     </div>
     </div>
     </div>
    </footer>
+
+   <section class="modal modal-feedback">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <form class="name-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="username">
+        <p class="modal-description">Ваше имя:</p>
+        <label class="visually-hidden" for="username">Имя</label>
+        <input class="name-user" id="username" type="text" name="name" placeholder="Имя Фамилия">
+      </div>
+      <div class="usermail">
+        <p class="modal-description">Ваш e-mail:</p>
+        <label class="visually-hidden" for="usermail">mail</label>
+        <input class="mail-user" id="usermail" type="mail" name="mail" placeholder="email@example.com">
+      </div>
+      <div class="usertext">
+        <p class="modal-description">Текст письма:</p>
+        <textarea class="text-user" name="message" cols="30" rows="4" placeholder="В свободной форме"></textarea>
+      </p>
+    </div>
+    </form>
+    <button class="button-feedback" type="submit">Отправить</button>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.822608413316!2d30.31522021600736!3d59.968265981886944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1624802900039!5m2!1sru!2sru" width="943" height="449" style="border:0;" allowfullscreen="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург" loading="lazy"></iframe>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
+
   </body>
 </html>

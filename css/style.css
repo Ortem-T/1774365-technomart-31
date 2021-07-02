@@ -33,6 +33,7 @@
   --button-menu-darck-gray: rgba(169, 169, 169, 0.3);
   --button-red-light: #CA2C37;
   --button-red-darck: #BA2732;
+  --input-gray:#B5B5B5;
 
   --footer-grey: #293449;
 
@@ -1139,7 +1140,7 @@ input[type="search"]:focus+.botton-search {
 
 .footer-mail a:active,
 .footer-copyright a:active {
-  color: var(-);
+  color: var(--basic-red);
 }
 
 /* CATALOG */
@@ -1234,7 +1235,7 @@ input[type="search"]:focus+.botton-search {
 
 .filter-button {
   width: 220px;
-  height: 38px;
+  padding: 10px;
   margin-top: 12px;
   background-color: var(--basic-white);
   border: 1px solid #E5E5E5;
@@ -1252,8 +1253,6 @@ input[type="search"]:focus+.botton-search {
   list-style: none;
 }
 
-
-
 .filters-title {
   margin: 0;
   font-size: 13px;
@@ -1267,6 +1266,7 @@ input[type="search"]:focus+.botton-search {
   padding-left: 18px;
   margin-bottom: 14px;
 }
+
 .sorting-title {
   margin: 0;
   width: 222px;
@@ -1302,11 +1302,11 @@ input[type="search"]:focus+.botton-search {
 
 .range-controls {
   position: relative;
-  height: 41px;
   margin-bottom: 9px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
+  padding-bottom: 39px;
   background-color: var(--catalog-beige);
   border-radius: 5px;
 }
@@ -1368,7 +1368,6 @@ input[type="search"]:focus+.botton-search {
   line-height: inherit;
 }
 
-
 .filter-option {
   font-size: 15px;
   line-height: 19px;
@@ -1399,6 +1398,10 @@ input[type="search"]:focus+.botton-search {
   border-radius: 3px;
 }
 
+.filter-input-checkbox + label:hover::before {
+  border: 2px solid var(--input-gray);
+}
+
 
 .filter-input-checkbox:checked + label::after {
   content: "";
@@ -1409,6 +1412,11 @@ input[type="search"]:focus+.botton-search {
   height: 17px;
   background-image: url("../img/Shape.svg");
 }
+
+.filter-input-checkbox:checked + label:hover::after {
+  background-image: url("../img/Shape-darkgray.svg"); 
+}
+
 
 .filter-input-radio + label::before {
   content: "";
@@ -1432,6 +1440,12 @@ input[type="search"]:focus+.botton-search {
   border-radius: 50%;
 }
 
+.filter-input-radio + label:hover:before {
+  border: 4px solid var(--input-gray);
+}
+.filter-input-radio:checked + label:hover:after {
+  background-color: var(--input-gray);
+}
 
 .filter-button {
   line-height: 18px;
@@ -1531,7 +1545,6 @@ input[type="search"]:focus+.botton-search {
 .catalog-item {
   display: block;
   position: relative;
-  flex: 1 1 auto;
   width: 218px;
   min-height: 318px;
   margin-right: 20px;
@@ -1597,7 +1610,7 @@ input[type="search"]:focus+.botton-search {
   border: none;
   align-self: center;
   width: 135px;
-  height: 38px;
+  padding: 10px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -1627,7 +1640,7 @@ input[type="search"]:focus+.botton-search {
 .button-bookmarks {
   align-self: center;
   width: 135px;
-  height: 38px;
+  padding: 8px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;

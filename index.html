@@ -22,12 +22,12 @@
       <form class="search-form" action="blank.html" method="get">
         <label class="visually-hidden" for="site-search">Поиск:</label>
         <input type="search" name="search" placeholder="Поиск..." id="site-search">
-        <button class="botton-search" type="submit" aria-label="Закрыть"></button>
+        <button class="botton-search" type="submit" aria-label="Поиск"></button>
       </form>
         <ul class="user-list">
           <li><a class="bookmarks" href="blank.html">Закладки:</a></li>
           <li><a class="cart" href="blank.html">Корзина:</a></li>
-          <li><a class="order" href="blank.html">Оформить заказ</a></li>
+          <li><button class="order">Оформить заказ</button></li>
         </ul>
       </div>
     </div>
@@ -38,8 +38,8 @@
         <li><p class="main-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p></li>
       </ul>
       <ul class="main-login">
-        <li><a class="login-link" href="blank.html">Войти</a></li>
-        <li><a class="registration-link" href="blank.html">Регистрация</a></li>
+        <li><button class="login-link">Войти</button></li>
+        <li><button class="registration-link">Регистрация</button></li>
       </ul>
     </div>
     <nav class="main-navigation">
@@ -60,24 +60,24 @@
        <div class="menu-container">
          <div class="item-material">
            <h3>Материалы</h3>
-           <a class="button-menu" href="blank.html">На любой вкус</a>
+           <a class="button-menu" href="blank.html" aria-label="Каталог материалов">На любой вкус</a>
            <a class="new" href="blank.html"><img src="img/new.svg" width="70" height="70" alt="Новинка"></a>
          </div>
          <div class="item-tool">
           <h3>Инструмент</h3>
-          <a class="button-menu" href="blank.html">На все случаи</a>
+          <a class="button-menu" href="blank.html" aria-label="Каталог инструментов">На все случаи</a>
          </div>
         <div class="item-technic">
           <h3>Техника</h3>
-          <a class="button-menu" href="blank.html">Для стройки</a>
+          <a class="button-menu" href="blank.html" aria-label="Каталог техники">Для стройки</a>
         </div>
         <div class="item-stock">
           <h3>Скидки 50%</h3>
-          <a class="button-menu" href="blank.html">На 350 товаров</a>
+          <a class="button-menu" href="blank.html" aria-label="Скидки на товары">На 350 товаров</a>
         </div>
         <div class="item-delivery">
           <h3>Доставка</h3>
-          <a class="button-menu" href="blank.html">Бесплатно</a>
+          <a class="button-menu" href="blank.html" aria-label="Условия бесплатной доставки">Бесплатно</a>
         </div>
       <div class="gallery-container">
        <h2 class="visually-hidden">Фотогалерея</h2>
@@ -106,7 +106,7 @@
         <li class="catalog-item-popular">
             <a href="blank.html">
                 <p class="catalog-item-image">
-                    <img src="img/BOSCH-BFG-9000.jpg" width="184" height="164" alt="Синий перфоратор фирмы BOSCH BFG 9000">
+                    <img src="img/BOSCH-BFG-9000.jpg" width="184" height="164" alt="Перфоратор синего цвета с буром">
                 </p>
                 <h3 class="catalog-item-title">Перфоратор BOSCH BFG 9000</h3>
             </a>
@@ -116,7 +116,7 @@
         <li class="catalog-item-popular">
           <a href="blank.html">
               <p class="catalog-item-image">
-                  <img src="img/BOSCH-BFG-3000.jpg" width="127" height="112" alt="Синий перфоратор фирмы BOSCH BFG 3000">
+                  <img src="img/BOSCH-BFG-3000.jpg" width="127" height="112" alt="Перфоратор синего цвета с буром">
               </p>
               <h3 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h3>
           </a>
@@ -127,7 +127,7 @@
       <li class="catalog-item-popular">
         <a href="blank.html">
             <p class="catalog-item-image">
-                <img src="img/BOSCH-BFG-6000.jpg" width="144" height="128" alt="Синий перфоратор фирмы BOSCH BFG 6000">
+                <img src="img/BOSCH-BFG-6000.jpg" width="144" height="128" alt="Перфоратор синего цвета с буром">
             </p>
             <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
         </a>
@@ -137,7 +137,7 @@
     <li class="catalog-item-popular">
       <a href="blank.html">
           <p class="catalog-item-image">
-              <img src="img/BOSCH-BFG-2000.jpg" width="127" height="112" alt="Синий перфоратор фирмы BOSCH BFG 2000">
+              <img src="img/BOSCH-BFG-2000.jpg" width="127" height="112" alt="Перфоратор синего цвета с буром">
           </p>
           <h3 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h3>
       </a>
@@ -184,7 +184,7 @@
        <h2>Сервисы</h2>
        <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-            <form class="service-form">
+            <form class="service-form" method="get" action="https://echo.htmlacademy.ru">
               <ul class="service-list">
                   <li class="service-delivery">
                       <input class="visually-hidden filter-input-checkbox-service" type="radio" name="service" value="delivery" id="filter-delivery" checked>
@@ -236,7 +236,7 @@
       <p>Вы можете забрать товар сами,<br>
         заехав в наш офис:</p>
       <img src="img/map.jpg" width="300" height="158" alt="Карта местонахождения магазина">
-      <a class="button-red button-red-map" href="mailto:mail@htmlacademy.ru">Заблудились? Напишите НАМ!</a>
+      <button class="button-red button-red-map" >Заблудились? Напишите НАМ!</button>
      </section>
     </div>
    </main>

@@ -22,12 +22,12 @@
       <form class="search-form" action="blank.html" method="get">
         <label class="visually-hidden" for="site-search">Поиск:</label>
         <input type="search" name="search" placeholder="Поиск..." id="site-search">
-        <button class="botton-search" type="submit" aria-label="Закрыть"></button>
+        <button class="botton-search" type="submit" aria-label="Поиск"></button>
       </form>
         <ul class="user-list">
-          <li><a class="bookmarks" href="blank.html">Закладки</a></li>
-          <li><a class="cart" href="blank.html">Корзина</a></li>
-          <li><a class="order" href="blank.html">Оформить заказ</a></li>
+          <li><a class="bookmarks" href="blank.html">Закладки:</a></li>
+          <li><a class="cart cart-active" href="blank.html">Корзина:</a></li>
+          <li><button class="order">Оформить заказ</button></li>
         </ul>
       </div>
     </div>
@@ -37,9 +37,14 @@
         <li class="contact-center"><a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a></li>
         <li><p class="main-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p></li>
       </ul>
-      <ul class="main-login">
-        <li><a class="login-link" href="blank.html">Войти</a></li>
-        <li><a class="registration-link" href="blank.html">Регистрация</a></li>
+      <ul class="user-login">
+        <!--<li><button class="login-link">Войти</button></li>
+        <li><button class="registration-link">Регистрация</button></li>-->
+        <li><a class="user-link" href="blank.html">Равшан Джамшутович</a></li>
+        <li><a class="user-account" href="blank.html">Мои заказы</a>
+            <svg width="6" height="7 "><circle r="2" cx="50%" cy="50%" fill="#32425C"></svg>
+            <a class="user-account" href="blank.html">Личный кабинет</a>
+        </li>
       </ul>
     </div>
     <nav class="main-navigation">
@@ -166,12 +171,14 @@
                     <li class="arrows-option arrows-radio">
                         <input class="visually-hidden arrows-input-radio arrows-input" type="radio" name="arrows" value="up" id="filter-up" checked>
                         <label for="filter-up">
+                            <span class="visually-hidden">Сортировка по возрастанию</span>
                             <svg width="11" height="10"> <polygon class="triangle" points="0,10 5.5,0 11,10" fill="#C5C5C5"/></svg>
                         </label>
                     </li>
                     <li class="arrows-option arrows-radio">
                         <input class="visually-hidden arrows-input-radio arrows-input" type="radio" name="arrows" value="down" id="filter-down">
                         <label for="filter-down">
+                            <span class="visually-hidden">Сортировка по убыванию</span>
                             <svg width="11" height="10"> <polygon class="triangle" points="0,0 5.5,10 11,0" fill="#C5C5C5"/></svg>
                         </label>
                     </li>
@@ -215,23 +222,23 @@
                     </a>
                         <p class="catalog-item-old-price"><del>30500 Р.</del></p>
                         <p class="catalog-item-price">25500 Р.</p>
-                        <a class="new" href="blank.html"><img src="img/new.svg" width="70" height="70" alt="Новинка"></a>
+                        <img class="new" src="img/new.svg" width="70" height="70" alt="Новинка">
                 </li>
                 <li class="catalog-item">
                     <a href="blank.html">
                         <p class="catalog-item-image">
-                            <img src="img/BOSCH-BFG-3000.jpg" width="127" height="112" alt="Синий перфоратор фирмы BOSCH BFG 3000">
+                            <img src="img/BOSCH-BFG-3000.jpg" width="127" height="112" alt="Перфоратор синего цвета с буром">
                         </p>
                         <h3 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h3>
                     </a>
                         <p class="catalog-item-old-price"><del>22500 Р.</del></p>
                         <p class="catalog-item-price">15500 Р.</p>
-                        <a class="new" href="blank.html"><img src="img/new.svg" width="70" height="70" alt="Новинка"></a>
+                        <img class="new" src="img/new.svg" width="70" height="70" alt="Новинка">
                 </li>
                 <li class="catalog-item">
                     <a href="blank.html">
                         <p class="catalog-item-image">
-                            <img src="img/BOSCH-BFG-6000.jpg" width="144" height="128" alt="Синий перфоратор фирмы BOSCH BFG 6000">
+                            <img src="img/BOSCH-BFG-6000.jpg" width="144" height="128" alt="Перфоратор синего цвета с буром">
                         </p>
                         <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
                     </a>
@@ -241,29 +248,29 @@
                 <li class="catalog-item">
                     <a href="blank.html">
                         <p class="catalog-item-image">
-                            <img src="img/BOSCH-BFG-2000.jpg" width="127" height="112" alt="Синий перфоратор фирмы BOSCH BFG 2000">
+                            <img src="img/BOSCH-BFG-2000.jpg" width="127" height="112" alt="Перфоратор синего цвета с буром">
                         </p>
                         <h3 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h3>
                     </a>
                         <p class="catalog-item-old-price old-price-none">15000 P.</p>
                         <p class="catalog-item-price">12500 Р.</p>
-                        <a class="new" href="blank.html"><img src="img/new.svg" width="70" height="70" alt="Новинка"></a>
+                        <img class="new" src="img/new.svg" width="70" height="70" alt="Новинка">
                 </li>
                 <li class="catalog-item">
                     <a href="blank.html">
                         <p class="catalog-item-image">
-                            <img src="img/BOSCH-BFG-3000.jpg" width="127" height="112" alt="Синий перфоратор фирмы BOSCH BFG 3000">
+                            <img src="img/BOSCH-BFG-3000.jpg" width="127" height="112" alt="Перфоратор синего цвета с буром">
                         </p>
                         <h3 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h3>
                     </a>
                         <p class="catalog-item-old-price"><del>22500 Р.</del></p>
                         <p class="catalog-item-price">15500 Р.</p>
-                        <a class="new" href="blank.html"><img src="img/new.svg" width="70" height="70" alt="Новинка"></a>
+                        <img class="new" src="img/new.svg" width="70" height="70" alt="Новинка">
                 </li>
                 <li class="catalog-item">
                     <a href="blank.html">
                         <p class="catalog-item-image">
-                            <img src="img/BOSCH-BFG-6000.jpg" width="144" height="128" alt="Синий перфоратор фирмы BOSCH BFG 6000">
+                            <img src="img/BOSCH-BFG-6000.jpg" width="144" height="128" alt="Перфоратор синего цвета с буром">
                         </p>
                         <h3 class="catalog-item-title">Перфоратор BOSCH BFG 6000</h3>
                     </a>
@@ -273,13 +280,13 @@
                 <li class="catalog-item">
                     <a href="blank.html">
                         <p class="catalog-item-image">
-                            <img src="img/BOSCH-BFG-2000.jpg" width="127" height="112" alt="Синий перфоратор фирмы BOSCH BFG 2000">
+                            <img src="img/BOSCH-BFG-2000.jpg" width="127" height="112" alt="Перфоратор синего цвета с буром">
                         </p>
                         <h3 class="catalog-item-title">Перфоратор BOSCH BFG 2000</h3>
                     </a>
                         <p class="catalog-item-old-price old-price-none">15000 P.</p>
                         <p class="catalog-item-price">12500 Р.</p>
-                        <a class="new" href="blank.html"><img src="img/new.svg" width="70" height="70" alt="Новинка"></a>
+                        <img class="new" src="img/new.svg" width="70" height="70" alt="Новинка">
                 </li>
             </ul>
         </section>

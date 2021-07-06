@@ -20,13 +20,14 @@
         <img src="img/logo.png" width="220" height="47" alt="Логотип магазина Техномарт">
       </a>
       <form class="search-form" action="blank.html" method="get">
-        <label for="site-search">Поиск:</label>
-        <input type="search" name="search" placeholder="Искать..." id="site-search" >
+        <label class="visually-hidden" for="site-search">Поиск:</label>
+        <input type="search" name="search" placeholder="Поиск..." id="site-search">
+        <button class="botton-search" type="submit" aria-label="Поиск"></button>
       </form>
         <ul class="user-list">
           <li><a class="bookmarks" href="blank.html">Закладки:</a></li>
           <li><a class="cart" href="blank.html">Корзина:</a></li>
-          <li><a class="order" href="blank.html">Оформить заказ</a></li>
+          <li><button class="order">Оформить заказ</button></li>
         </ul>
       </div>
     </div>
@@ -37,8 +38,8 @@
         <li><p class="main-address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p></li>
       </ul>
       <ul class="main-login">
-        <li><a class="login-link" href="blank.html">Войти</a></li>
-        <li><a class="registration-link" href="blank.html">Регистрация</a></li>
+        <li><button class="login-link">Войти</button></li>
+        <li><button class="registration-link">Регистрация</button></li>
       </ul>
     </div>
     <nav class="main-navigation">
@@ -117,5 +118,3 @@
     </div>
     </div>
    </footer>
-  </body>
-</html>

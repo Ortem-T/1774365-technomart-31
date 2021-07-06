@@ -208,6 +208,7 @@ input[type="search"]:focus+.botton-search {
   display: block; 
   padding-left: 47px;
   padding-top: 9px;
+  padding-bottom: 9px;
   position: relative;
   width: 103px;
 }
@@ -316,6 +317,7 @@ input[type="search"]:focus+.botton-search {
   color: var(--basic-dark-gray);
   margin: 0;
   text-align: center;
+  margin-top: 3px;
 }
 
 .main-login{
@@ -1204,6 +1206,95 @@ input[type="search"]:focus+.botton-search {
 
 /* CATALOG */
 
+.cart-active {
+  background-color: var(--basic-red);
+}
+
+.user-login {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.user-account {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-dark-gray);
+}
+
+.user-account:hover,
+.user-account:focus {
+  color: var(--basic-red);
+}
+
+.user-login li:last-of-type{
+  margin-right: 45px;
+  margin-top: 7px;
+}
+
+.user-login svg {
+  margin: 2px 9px;
+}
+
+.user-link {
+  display: block;
+  position: relative;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  width: 300px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+.user-link::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  background-image: url("../img/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 13px;
+  left: 15px;
+}
+
+.user-link:hover:before,
+.user-link:focus:before {
+  background-image: url("../img/icon-user-hover.png");
+}
+
+.user-link::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 17px;
+  background-image: url("../img/icon-logout.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 14px;
+  right: 14px;
+}
+
+.user-link:hover::after,
+.user-link:focus::after {
+  background-image: url("../img/icon-logout-hover.png");
+}
+
+.user-link:active,
+.user-account:active {
+  color: var(--input-gray);
+}
+
 .breadcrumbs a,
 .catalog a {
   color: var(--basic-black);
@@ -1252,10 +1343,6 @@ input[type="search"]:focus+.botton-search {
 .breadcrumbs-current::after {
   display: none;
 }
-
-/*.page-catalog h1 {
-  padding: 0;
-}*/
 
 .page-title {
   margin: 0;

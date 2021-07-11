@@ -1916,7 +1916,6 @@ input[type="search"]:focus+.botton-search {
 
 
 .modal {
-  
   position: fixed;
   top: 0;
   right: 0;
@@ -2051,14 +2050,6 @@ textarea[name="message"] {
   cursor: pointer;
 }
 
-.modal-show {
-  display: block;
-  animation: bounce 0.6s;
-}
-
-.modal-error {
-  animation: shake 0.6s;
-}
 
 /* Modal map*/
 
@@ -2114,9 +2105,23 @@ textarea[name="message"] {
   margin-right: 6px;
 }
 
+.button-modal-cart-order:hover,
+.button-modal-cart-order:focus {
+  background-color: var(--button-red-light); 
+}
+
+.button-modal-cart-order:active {
+  background-color: var(--button-red-darck);
+}
+
 .button-modal-cart-buy {
   color: var(--basic-black);
   background-color: var(--basic-white); 
+}
+
+.button-modal-cart-buy:hover,
+.button-modal-cart-buy:focus {
+  border: 1px solid var(--basic-greylight); 
 }
 
 .modal-cart h2::after {
@@ -2129,6 +2134,15 @@ textarea[name="message"] {
   background-position: 0 0;
   top: 55px;
   left: 81px;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 /* Animations */

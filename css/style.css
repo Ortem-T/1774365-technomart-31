@@ -34,6 +34,13 @@
   --button-red-light: #CA2C37;
   --button-red-darck: #BA2732;
   --input-gray:#B5B5B5;
+  --service-gray:#405069;
+  --filter-white:#E5E5E5;
+  --range-green:#00ca74;
+  --range-beige:#ababab;
+  --range-gray:#cfcfcf;
+  --button-green:#367315;
+
 
   --footer-grey: #293449;
 
@@ -63,10 +70,6 @@ a {
   text-decoration: none;
 }
 
-/*img {
-  max-width: 100%;
-  height: auto;
-}*/
 
 .main-header {
   font-family: "Cuprum", Arial, sans-serif;
@@ -287,7 +290,7 @@ input[type="search"]:focus+.botton-search {
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
-  border: 3px solid #FFFFFF;
+  border: 3px solid var(--basic-white);
   color: var(--basic-red);
   width: 264px;
   height: 32px;
@@ -415,7 +418,7 @@ input[type="search"]:focus+.botton-search {
   padding-left: 25px;
   padding-right: 25px;
   margin-bottom: 60px;
-  border-bottom: 4px solid #293449;
+  border-bottom: 4px solid var(--footer-grey);
 }
 
 .site-navigation li {
@@ -900,17 +903,6 @@ input[type="search"]:focus+.botton-search {
   flex: 1 1 100%;
 }
 
-/*.service-wrapper::after {
-  content: "";
-  position: absolute;
-  width: 468px;
-  height: 261px;
-  background-image: url("../img/delivery.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  
-}*/
-
 .about-us h2,
 .contacts h2 {
   font-family: "Cuprum", Arial, sans-serif;
@@ -944,7 +936,7 @@ input[type="search"]:focus+.botton-search {
   font-weight: 700;
   color: var(--basic-white);
   background-color: var(--basic-dark-gray);
-  box-shadow: inset 0px -1px 0px #293449, inset 0px 1px 0px #405069;
+  box-shadow: inset 0px -1px 0px var(--footer-grey), inset 0px 1px 0px var(--service-gray);
   width: 240px;
   border: none;
   text-align: start;
@@ -1058,6 +1050,10 @@ input[type="search"]:focus+.botton-search {
   color: var(--basic-white);
 }
 
+.footer-phone {
+  color: var(--basic-white);
+}
+
 .footer-nav-list-1 {
   display: flex;
   justify-content: space-between;
@@ -1085,7 +1081,7 @@ input[type="search"]:focus+.botton-search {
   justify-content: space-between;
 }
 
-.footer-nav-1 a {
+.footer-nav-list-1 a {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1093,7 +1089,7 @@ input[type="search"]:focus+.botton-search {
   color: var(--basic-white);
 }
 
-.footer-nav-2 a {
+.footer-nav-list-2 a {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1385,7 +1381,7 @@ input[type="search"]:focus+.botton-search {
   padding: 10px;
   margin-top: 12px;
   background-color: var(--basic-white);
-  border: 1px solid #E5E5E5;
+  border: 1px solid var(--filter-white);
 }
 
 .sorting {
@@ -1466,7 +1462,7 @@ input[type="search"]:focus+.botton-search {
 .range-controls .bar {
   width: 80%;
   height: 2px;
-  background: #00ca74;
+  background: var(--range-green);
 }
 
 .range-controls .toggle {
@@ -1477,9 +1473,9 @@ input[type="search"]:focus+.botton-search {
   height: 4px;
   padding: 0;
   border: 8px solid var(--basic-white);
-  background-color: #ababab;
+  background-color: var(--range-beige);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 var(--range-gray);
   cursor: pointer;
 }
 
@@ -1558,12 +1554,12 @@ input[type="search"]:focus+.botton-search {
   left: -37px;
   width: 22px;
   height: 17px;
-  background-image: url("../img/Shape.svg");
+  background-image: url("../img/shape.svg");
 }
 
 .filter-input-checkbox:checked + label:hover::after,
 .filter-input-checkbox:checked:focus + label::after {
-  background-image: url("../img/Shape-darkgray.svg"); 
+  background-image: url("../img/shape-darkgray.svg"); 
 }
 
 
@@ -1781,7 +1777,7 @@ input[type="search"]:focus+.botton-search {
   color:var(--basic-white);
   border-radius: 2px;
   background-color: var(--basic-green);
-  box-shadow: inset 0px -3px 0px #367315;
+  box-shadow: inset 0px -3px 0px var(--button-green);
   margin-top: 16px;
   margin-bottom: 10px;
   cursor: pointer;
@@ -1859,7 +1855,7 @@ input[type="search"]:focus+.botton-search {
   color: var(--basic-black);
   line-height: 18px;
   text-transform: uppercase;
-  border: 1px solid #E5E5E5;
+  border: 1px solid var(--filter-white);
   border-radius: 2px;
 }
 
